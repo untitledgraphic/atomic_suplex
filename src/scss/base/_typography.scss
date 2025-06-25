@@ -1,0 +1,46 @@
+@use "../abstracts/" as *;
+@use "../utilities/" as *;
+
+@font-face {
+    font-family: 'gerasolregular';
+    src: url('../fonts/gerasol-webfont.woff2') format('woff2'),
+         url('../fonts/gerasol-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Basics
+-----------------------------------------*/
+
+body {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+h1, h2, h3, h4 {
+    font-family: $serif;
+}
+
+body,
+p {
+	font-size: rem-calc(16);
+    line-height: 1.25;
+}
+
+b {
+    font-weight: bold;
+}
+
+a, 
+a:visited {
+    text-decoration: none;
+    color: inherit;
+
+    p & {
+        display: inline-block;
+        background: lime;
+        color: $textColourNeg;
+    }
+}

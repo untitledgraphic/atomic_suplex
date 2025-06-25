@@ -1,0 +1,13 @@
+// Descriptive base colors 
+$notWhite: hsl(0, 0%, 96%);
+$notBlack: hsl(0, 0%, 15%);
+$acidYellow: hsl(62, 75%, 50%);
+$pink: hsl(327, 100%, 43%);
+
+// We use these to control various global styles
+$colorPrimary: $acidYellow;
+$colorSecondary: $pink;
+$textColour: $notWhite;
+$textColourNeg: $notBlack;
+
+$bg: $notBlack;

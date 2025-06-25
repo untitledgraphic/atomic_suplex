@@ -1,0 +1,62 @@
+@use "../abstracts/" as *;
+@use "../utilities/" as *;
+
+
+.outbound {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    z-index: 2;
+    font-family: $serif;
+    
+    > * + * {
+        border-left: 1px solid $textColour;
+    }
+}
+
+.outbound__link {
+    display: block;
+    padding: 20px;
+    background: $bg;
+    display: grid;
+        grid-template-rows: auto 20px;
+        justify-items: center;
+        align-content: stretch;
+        align-items: center;
+        gap: 5px;
+
+    &:hover,
+    &:focus {
+        color: $colorPrimary;
+        background: $bg;
+
+        svg {
+            path, circle {
+                fill: $colorSecondary;
+            }
+        }
+    }
+
+    @media ($fromLarge) {
+        font-size: 20px;
+    }
+
+    svg {
+        path, circle {
+            fill: $colorPrimary;
+        }
+    }
+}
+
+.outbound__icon {
+    width: 30px;
+    margin: auto;
+
+    @media ($fromLarge) {
+        width: 45px;
+    }
+}
