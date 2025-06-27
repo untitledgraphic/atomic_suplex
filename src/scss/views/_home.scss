@@ -42,11 +42,6 @@ body {
             height: 8px;
         }
 
-        // b {
-        //     background-color: $colorPrimary;
-        //     color: $textColourNeg;
-        // }
-
         @media ($fromLarge) {
             font-size: 20px;
             line-height: 28px;
@@ -122,6 +117,10 @@ body {
     width: 100%;
     bottom: 0;
     left: 0;
+
+    img {
+        width: 100%;
+    }
 
     @media ($fromLarge) {
         bottom: auto;
